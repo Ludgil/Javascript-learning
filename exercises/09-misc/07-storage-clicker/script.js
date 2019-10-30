@@ -10,5 +10,19 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    let output=document.getElementById("target");
+    let number = document.getElementById("target").textContent;
+    parseInt(number);
+
+    if(localStorage.getItem("counter", number)!=0){
+        number=localStorage.getItem("counter",number);
+        output.innerHTML=number;
+    }
+
+
+    document.getElementById("increment").addEventListener("click", ()=>{
+
+        output.innerHTML=++number;
+        localStorage.setItem("counter",number);
+    });
 })();
