@@ -10,5 +10,23 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+
+    async function catch_xmen(){
+        const response= await fetch("http://localhost:3000/heroes");
+        const xmen = await response.json();
+        console.log(xmen);
+        // for(data of xmen){
+        //     console.log(data.name);
+        // }
+
+    }
+    document.getElementById("run").addEventListener("click", ()=>{
+
+        catch_xmen().catch(error =>{
+            console.log("oups");
+            console.error(error);
+        });
+
+
+    });
 })();

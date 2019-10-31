@@ -10,5 +10,23 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+
+        document.getElementById("run").addEventListener("click", async ()=>{
+
+        let input_id = document.getElementById("hero-id").value;
+
+        try {
+            const response= await fetch("http://localhost:3000/heroes/"+input_id, {
+                    method: "DELETE",
+                    
+            });
+            const result = await response.json();
+            console.log(result);
+        }
+        catch(error){
+            console.log("error!!");
+            console.error(error);
+        }
+    });
+
 })();
