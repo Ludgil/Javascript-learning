@@ -40,8 +40,10 @@ let IsString =  (texte) => {
 }
 
 let AfficherExtensionString =  (texte) => {
-    let str=texte.split(".");
-    return str[1];
+    // let str=texte.split(".");
+    // return str[1];
+    let match= texte.match(/[^.]*$/);
+    return match[0];
 
 }
 let NombreEspaceString =  (texte) => {
