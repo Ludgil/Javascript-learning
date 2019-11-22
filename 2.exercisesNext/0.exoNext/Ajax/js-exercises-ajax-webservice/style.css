@@ -1,0 +1,56 @@
+body {
+  margin: 0 auto;
+  background: url("img-noise-350x350_2.png");
+  background-repeat:repeat;
+}
+#main {
+  width: 900px;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 900px;
+  border-top: 1px solid white;
+}
+
+#photo{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-bottom: 25px;
+  margin-top: 50px;
+}
+
+blockquote{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  color: white;
+  font-family: 'Parisienne', cursive;
+  font-size: 40px;
+  border-bottom: 1px solid white;
+}
+
+#quote{
+  margin-bottom: 25px;
+}
+
+
+
+#author{
+  color: white;
+  font-size: 25px;
+  font-family: 'Open Sans', sans-serif;
+  border-bottom: 1px solid white;
+  padding-bottom: 25px;
+}

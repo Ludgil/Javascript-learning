@@ -1,0 +1,41 @@
+body{
+    margin:0 auto;
+    width: 900px;
+}
+
+#character{
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#arrows{
+    display: flex;
+    flex-direction: row;
+}
+
+#up{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+#down{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+#left{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+#right{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
+
+.highlight{
+    opacity: 0.5;
+}
