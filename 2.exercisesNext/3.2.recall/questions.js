@@ -1,21 +1,21 @@
 let selectElementsStartingWithA = (array) => {
-    return 'Write your method here';
+    return array.filter(a => a.charAt(0)== "a");
 }
 
 let selectElementsStartingWithVowel = (array) => {
-    return 'Write your method here';
+    return array.filter(a => a.charAt(0).match(/[aeyuio]+/));
 }
 
 let removeNullElements = (array) => {
-    return 'Write your method here';
+    return array.filter(a => a != null);
 }
 
 let removeNullAndFalseElements = (array) => {
-    return 'Write your method here';
+    return array.filter(a => a !== null && a !== false ); // retirer le false sans le 0
 }
 
 let reverseWordsInArray = (array) => {
-    return 'Write your method here';
+    return array.map(a=>a.split("").reverse().join(""));
 }
 
 let everyPossiblePair = (array) => {
